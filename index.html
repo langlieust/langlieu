@@ -12,106 +12,66 @@
 <meta property="og:image" content="https://langlieuofficial.com/logo.png">
 <meta property="og:url" content="https://langlieuofficial.com">
 
-<link rel="icon" href="https://langlieuofficial.com/logo.png" type="image/png">
+<!-- FAVICON (UPDATED) -->
+<link rel="icon" href="https://langlieuofficial.com/favicon.png" type="image/png">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
 
-body{
-  background:#0f172a;
-  color:white;
-}
+body{background:#0f172a;color:white;}
 
 /* NAVBAR */
 nav{
-  position:fixed;
-  width:100%;
-  top:0;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:20px 50px;
-  background:rgba(0,0,0,0.7);
+  position:fixed;width:100%;top:0;
+  display:flex;justify-content:space-between;align-items:center;
+  padding:20px 50px;background:rgba(0,0,0,0.7);
 }
 
-nav ul{
-  display:flex;
-  list-style:none;
-}
-
-nav ul li{
-  margin:0 15px;
-}
-
-nav ul li a{
-  color:white;
-  text-decoration:none;
-}
-
-nav ul li a:hover{
-  color:#ffb800;
-}
+nav ul{display:flex;list-style:none;}
+nav ul li{margin:0 15px;}
+nav ul li a{color:white;text-decoration:none;}
+nav ul li a:hover{color:#ffb800;}
 
 .logo img{height:35px;}
 
 /* HERO */
 header{
-  height:100vh;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
+  height:100vh;display:flex;flex-direction:column;
+  justify-content:center;align-items:center;
   background:linear-gradient(135deg,#ff4d00,#ffb800);
-  text-align:center;
-  padding-top:80px;
+  text-align:center;padding-top:80px;
 }
 
 header h1{font-size:60px;}
 
 .btn{
-  margin-top:20px;
-  padding:12px 25px;
-  background:black;
-  color:white;
-  border-radius:30px;
+  margin-top:20px;padding:12px 25px;
+  background:black;color:white;border-radius:30px;
   text-decoration:none;
 }
 
 /* SECTION */
-section{
-  padding:100px 20px;
-  text-align:center;
-}
-
-/* H2 viết hoa */
-h2{
-  text-transform:uppercase;
-}
+section{padding:100px 20px;text-align:center;}
+h2{text-transform:uppercase;}
 
 /* SOCIAL */
 .social-section{
   background:linear-gradient(135deg,#6a11cb,#2575fc);
-  border-radius:20px;
-  margin:40px;
-  padding:60px 20px;
+  border-radius:20px;margin:40px;padding:60px 20px;
 }
 
 .social-grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:30px;
-  margin-top:40px;
+  gap:30px;margin-top:40px;
 }
 
 .social-card{
   background:rgba(255,255,255,0.1);
-  padding:30px;
-  border-radius:20px;
-  text-decoration:none;
-  color:white;
-  transition:0.3s;
+  padding:30px;border-radius:20px;
+  text-decoration:none;color:white;transition:0.3s;
 }
 
 .social-card:hover{
@@ -119,38 +79,32 @@ h2{
   background:rgba(255,255,255,0.2);
 }
 
+/* LOGO SOCIAL TO HƠN */
 .social-img{
-  width:60px;
-  height:60px;
-  border-radius:15px;
-  margin-bottom:15px;
+  width:80px;height:80px;
+  border-radius:20px;margin-bottom:15px;
+}
+
+/* TEXT SOCIAL */
+.social-card p{
+  font-size:14px;
+  opacity:0.8;
+  margin-top:5px;
 }
 
 /* VIDEO */
 .video-grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-  gap:25px;
-  margin-top:40px;
+  gap:25px;margin-top:40px;
 }
 
-.video-card{
-  text-decoration:none;
-  color:white;
-  text-align:left;
-}
+.video-card{text-decoration:none;color:white;text-align:left;}
+.video-card:hover{transform:translateY(-5px);}
 
-.video-card:hover{
-  transform:translateY(-5px);
-}
-
-.thumb{
-  position:relative;
-}
-
+.thumb{position:relative;}
 .thumb img{
-  width:100%;
-  border-radius:15px;
+  width:100%;border-radius:15px;
   transition:0.3s;
 }
 
@@ -159,24 +113,13 @@ h2{
 }
 
 .time{
-  position:absolute;
-  bottom:8px;
-  right:8px;
-  background:black;
-  padding:3px 6px;
-  border-radius:5px;
-  font-size:12px;
+  position:absolute;bottom:8px;right:8px;
+  background:black;padding:3px 6px;
+  border-radius:5px;font-size:12px;
 }
 
-.video-card h3{
-  margin-top:10px;
-  font-size:16px;
-}
-
-.video-card p{
-  font-size:14px;
-  opacity:0.7;
-}
+.video-card h3{margin-top:10px;font-size:16px;}
+.video-card p{font-size:14px;opacity:0.7;}
 
 footer{
   padding:20px;
@@ -220,19 +163,26 @@ footer{
 
   <div class="social-grid">
 
+    <!-- FACEBOOK -->
     <a href="https://www.facebook.com/tiktok.langlieu/" target="_blank" class="social-card">
       <img src="https://langlieuofficial.com/Logo%20Facebook.png" class="social-img">
       <h3>Facebook</h3>
+      <p>234K người theo dõi</p>
     </a>
 
+    <!-- YOUTUBE -->
     <a href="https://www.youtube.com/@ThanhBin" target="_blank" class="social-card">
       <img src="https://langlieuofficial.com/Logo%20Youtube.png" class="social-img">
-      <h3>YouTube</h3>
+      <h3>YouTube Lang Lieu</h3>
+      <p>@ThanhBin • 9.63M subscribers</p>
+      <p>584 videos • 7,686,186,951 views</p>
     </a>
 
+    <!-- TIKTOK -->
     <a href="https://www.tiktok.com/@langlieu.video" target="_blank" class="social-card">
       <img src="https://langlieuofficial.com/LogoTiktok.png" class="social-img">
-      <h3>TikTok</h3>
+      <h3>TikTok Lang Lieu</h3>
+      <p>353.1K followers • 3.4M likes</p>
     </a>
 
   </div>
@@ -240,7 +190,7 @@ footer{
 
 <!-- VIDEOS -->
 <section id="videos">
-  <h2>Video triệu view</h2>
+  <h2>TOP Video triệu view</h2>
 
   <div class="video-grid">
 
@@ -275,7 +225,7 @@ footer{
 </section>
 
 <footer>
-  <p>© 2026 Lang Lieu Official</p>
+  <p>© 2026 Lang Lieu Official. All Rights Reserved.</p>
 </footer>
 
 </body>
