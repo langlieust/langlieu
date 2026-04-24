@@ -1,3 +1,134 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Lang Lieu Official</title>
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon32x32.png">
 <link rel="icon" type="image/png" sizes="48x48" href="/favicon48x48.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon16x16.png">
+
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <!-- SEO + Meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lang Lieu - Kênh video ẩm thực làng quê, hài hước, thử thách đồ ăn cay.">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: white;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #ff4d00, #ffb800);
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 60px;
+      font-weight: 700;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 20px;
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: black;
+      color: white;
+      border-radius: 30px;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .videos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 200px;
+      border-radius: 12px;
+    }
+
+    footer {
+      padding: 20px;
+      text-align: center;
+      background: #020617;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <header>
+    <h1>Lang Lieu</h1>
+    <p>Funny Village Food & Challenge Videos</p>
+    <a href="#videos" class="btn">Xem video</a>
+  </header>
+
+  <!-- ABOUT -->
+  <section>
+    <h2>Về chúng tôi</h2>
+    <p>
+      Lang Lieu là kênh chuyên về ẩm thực làng quê, thử thách đồ ăn cay và những video hài hước.
+    </p>
+  </section>
+
+  <!-- VIDEOS -->
+  <section id="videos">
+    <h2>Video nổi bật</h2>
+
+    <div class="videos">
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section>
+    <h2>Liên hệ</h2>
+    <p>Email: langlieu.kitchen@gmail.com</p>
+    <p>
+      <a href="https://facebook.com" style="color:#ffb800">Facebook</a> |
+      <a href="https://youtube.com" style="color:#ffb800">YouTube</a>
+    </p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Lang Lieu Official</p>
+  </footer>
+
+</body>
+</html>
