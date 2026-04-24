@@ -6,20 +6,18 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="Lang Lieu Official - Kênh video ẩm thực làng quê viral hàng chục triệu view">
+<meta name="description" content="Lang Lieu Official - Kênh video ẩm thực viral hàng chục triệu view">
 
 <meta property="og:title" content="Lang Lieu Official">
 <meta property="og:image" content="https://langlieuofficial.com/logo.png">
 <meta property="og:url" content="https://langlieuofficial.com">
 
-<!-- FAVICON (UPDATED) -->
 <link rel="icon" href="https://langlieuofficial.com/favicon.png" type="image/png">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
-
 body{background:#0f172a;color:white;}
 
 /* NAVBAR */
@@ -33,28 +31,72 @@ nav ul{display:flex;list-style:none;}
 nav ul li{margin:0 15px;}
 nav ul li a{color:white;text-decoration:none;}
 nav ul li a:hover{color:#ffb800;}
-
 .logo img{height:35px;}
 
 /* HERO */
 header{
-  height:100vh;display:flex;flex-direction:column;
+  height:50vh;
+  min-height:400px;
+  display:flex;flex-direction:column;
   justify-content:center;align-items:center;
-  background:linear-gradient(135deg,#ff4d00,#ffb800);
   text-align:center;padding-top:80px;
+
+  background:
+    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),
+    url('https://langlieuofficial.com/channels4_banner.jpg') center/cover no-repeat;
 }
 
-header h1{font-size:60px;}
+/* TYPING */
+.typing{
+  font-size:60px;
+  font-weight:700;
+  border-right:3px solid white;
+  white-space:nowrap;
+  overflow:hidden;
+  animation:blink 0.7s infinite;
+}
 
+@keyframes blink{
+  50%{border-color:transparent;}
+}
+
+.sub{
+  margin-top:10px;
+  font-size:18px;
+}
+
+/* BUTTON */
 .btn{
-  margin-top:20px;padding:12px 25px;
-  background:black;color:white;border-radius:30px;
+  margin-top:20px;
+  padding:12px 25px;
+  background:black;
+  color:white;
+  border-radius:30px;
   text-decoration:none;
 }
 
 /* SECTION */
 section{padding:100px 20px;text-align:center;}
 h2{text-transform:uppercase;}
+
+/* ABOUT */
+.about-container{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:40px;
+  max-width:1000px;
+  margin:40px auto;
+  flex-wrap:wrap;
+  text-align:left;
+}
+
+.about-img img{
+  width:280px;
+  border-radius:20px;
+}
+
+.about-text{max-width:500px;}
 
 /* SOCIAL */
 .social-section{
@@ -79,17 +121,9 @@ h2{text-transform:uppercase;}
   background:rgba(255,255,255,0.2);
 }
 
-/* LOGO SOCIAL TO HƠN */
 .social-img{
   width:80px;height:80px;
   border-radius:20px;margin-bottom:15px;
-}
-
-/* TEXT SOCIAL */
-.social-card p{
-  font-size:14px;
-  opacity:0.8;
-  margin-top:5px;
 }
 
 /* VIDEO */
@@ -118,9 +152,6 @@ h2{text-transform:uppercase;}
   border-radius:5px;font-size:12px;
 }
 
-.video-card h3{margin-top:10px;font-size:16px;}
-.video-card p{font-size:14px;opacity:0.7;}
-
 footer{
   padding:20px;
   background:#020617;
@@ -144,23 +175,31 @@ footer{
   </ul>
 </nav>
 
-<!-- HOME -->
+<!-- HERO -->
 <header id="home">
-  <h1>Lang Lieu</h1>
-  <p>Funny Village Food & Viral Videos</p>
+  <div class="typing" id="typing"></div>
+  <p class="sub">Funny Village Food & Viral Videos</p>
   <a href="#videos" class="btn">Xem video</a>
 </header>
 
 <!-- ABOUT -->
 <section id="about">
   <h2>About</h2>
-  <p>Lang Lieu is a channel with funny videos about village foods, village cooking, spicy foods challenge, country life, pranks, etc.</p>  
-  <p>Please subscribe to our Channel if our videos make you laugh. :D And turn on the little bell 🔔 for notification to prevent missing new videos. </p>
-<p>Thank you for watching the video and support! Don't forget to like and share videos to help the channel grow better ..</p>
-<br />
-  <h3>📩 Contact information:</h3>
-<p>Email: langlieu.kitchen@gmail.com</p>
-<p>#shorts #reels #tiktok #funnyvideo #mukbang #spicyfood </p>
+
+  <div class="about-container">
+
+    <div class="about-img">
+      <img src="https://langlieuofficial.com/thanhbin.png">
+    </div>
+
+    <div class="about-text">
+      <p>Lang Lieu là kênh ẩm thực làng quê viral hàng chục triệu view.</p>
+      <p>Subscribe để không bỏ lỡ video mới 🔥</p>
+      <br>
+      <b>Email:</b> langlieu.kitchen@gmail.com
+    </div>
+
+  </div>
 </section>
 
 <!-- SOCIAL -->
@@ -169,26 +208,22 @@ footer{
 
   <div class="social-grid">
 
-    <!-- FACEBOOK -->
     <a href="https://www.facebook.com/tiktok.langlieu/" target="_blank" class="social-card">
       <img src="https://langlieuofficial.com/Logo%20Facebook.png" class="social-img">
-      <h3>Facebook Lang Lieu</h3>
-      <p>234K người theo dõi</p>
+      <h3>Facebook</h3>
+      <p>234K followers</p>
     </a>
 
-    <!-- YOUTUBE -->
     <a href="https://www.youtube.com/@ThanhBin" target="_blank" class="social-card">
       <img src="https://langlieuofficial.com/Logo%20Youtube.png" class="social-img">
-      <h3>YouTube Lang Lieu</h3>
-      <p>@ThanhBin • 9.63M subscribers</p>
-      <p>584 videos • 7,686,186,951 views</p>
+      <h3>YouTube</h3>
+      <p>9.63M subscribers</p>
     </a>
 
-    <!-- TIKTOK -->
     <a href="https://www.tiktok.com/@langlieu.video" target="_blank" class="social-card">
       <img src="https://langlieuofficial.com/LogoTiktok.png" class="social-img">
-      <h3>TikTok Lang Lieu</h3>
-      <p>353.1K followers • 3.4M likes</p>
+      <h3>TikTok</h3>
+      <p>353K followers</p>
     </a>
 
   </div>
@@ -196,7 +231,7 @@ footer{
 
 <!-- VIDEOS -->
 <section id="videos">
-  <h2>TOP Video triệu view</h2>
+  <h2>Top Video</h2>
 
   <div class="video-grid">
 
@@ -205,8 +240,8 @@ footer{
         <img src="https://img.youtube.com/vi/GdkIgGG-f-Q/maxresdefault.jpg">
         <span class="time">8:41</span>
       </div>
-      <h3>Grilled Aloe Vera, Alaska Lobster</h3>
-      <p>42M views • 2 years ago</p>
+      <h3>Aloe Vera & Lobster</h3>
+      <p>42M views</p>
     </a>
 
     <a href="https://www.youtube.com/watch?v=5dhxuIQfjxA" target="_blank" class="video-card">
@@ -214,8 +249,8 @@ footer{
         <img src="https://img.youtube.com/vi/5dhxuIQfjxA/maxresdefault.jpg">
         <span class="time">9:07</span>
       </div>
-      <h3>Grilled Crab, Hot Stone</h3>
-      <p>32M views • 9 months ago</p>
+      <h3>Grilled Crab</h3>
+      <p>32M views</p>
     </a>
 
     <a href="https://www.youtube.com/watch?v=ZjT-dnDh4UE" target="_blank" class="video-card">
@@ -223,8 +258,8 @@ footer{
         <img src="https://img.youtube.com/vi/ZjT-dnDh4UE/maxresdefault.jpg">
         <span class="time">8:27</span>
       </div>
-      <h3>Whole Grilled Chicken, Crocodile</h3>
-      <p>24M views • 11 months ago</p>
+      <h3>Chicken & Crocodile</h3>
+      <p>24M views</p>
     </a>
 
   </div>
@@ -233,6 +268,21 @@ footer{
 <footer>
   <p>© 2026 Lang Lieu Official. All Rights Reserved.</p>
 </footer>
+
+<!-- TYPING SCRIPT -->
+<script>
+const text = "Lang Lieu";
+let i = 0;
+
+function typing(){
+  if(i < text.length){
+    document.getElementById("typing").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typing, 100);
+  }
+}
+typing();
+</script>
 
 </body>
 </html>
