@@ -2,36 +2,123 @@
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
-<title>Lang Lieu Official | Ẩm Thực Hài Hước Làng Quê</title>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+<title>Lang Lieu Official</title>
 
-<!-- SEO -->
-<meta name="description" content="Lang Lieu Official - Kênh video ẩm thực làng quê, thử thách đồ ăn cay và video hài hước viral hàng chục triệu view.">
-<meta name="keywords" content="Lang Lieu, food, village food, funny videos, mukbang, spicy challenge">
-
-<!-- Open Graph (Facebook) -->
-<meta property="og:locale" content="vi_VN">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Lang Lieu Official">
-<meta property="og:title" content="Lang Lieu Official">
-<meta property="og:description" content="Kênh video ẩm thực làng quê, thử thách đồ ăn cay và nội dung hài hước viral hàng chục triệu view.">
-<meta property="og:url" content="https://langlieuofficial.com">
-<meta property="og:image" content="https://langlieuofficial.com/logo.png">
-<meta property="og:image:width" content="1080">
-<meta property="og:image:height" content="1080">
-
-<!-- Twitter (bonus) -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Lang Lieu Official">
-<meta name="twitter:description" content="Funny Village Food & Viral Videos">
-<meta name="twitter:image" content="https://langlieuofficial.com/logo.png">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <link rel="icon" href="https://langlieuofficial.com/logo.png" type="image/png">
 
-<!-- LINK CSS -->
-<link rel="stylesheet" href="/style.css">
-
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+
+body{
+  background:#0f172a;
+  color:white;
+  scroll-behavior:smooth;
+}
+
+/* NAVBAR */
+nav{
+  position:fixed;
+  width:100%;
+  top:0;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 50px;
+  background:rgba(0,0,0,0.7);
+  backdrop-filter:blur(10px);
+  z-index:1000;
+}
+
+nav ul{
+  display:flex;
+  list-style:none;
+}
+
+nav ul li{
+  margin:0 15px;
+}
+
+nav ul li a{
+  color:white;
+  text-decoration:none;
+}
+
+nav ul li a:hover{
+  color:#ffb800;
+}
+
+/* LOGO */
+.logo{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  text-decoration:none;
+  color:white;
+  font-weight:600;
+}
+
+.logo img{
+  height:35px;
+}
+
+/* HERO */
+header{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(135deg,#ff4d00,#ffb800);
+  text-align:center;
+  padding-top:80px;
+}
+
+header h1{font-size:60px;}
+header p{margin-top:10px;font-size:20px;}
+
+.btn{
+  margin-top:20px;
+  padding:12px 25px;
+  background:black;
+  color:white;
+  border-radius:30px;
+  text-decoration:none;
+}
+
+/* SECTIONS */
+section{
+  padding:100px 20px;
+  text-align:center;
+}
+
+.videos{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:20px;
+}
+
+iframe{
+  width:100%;
+  height:200px;
+  border-radius:12px;
+}
+
+.social a{
+  color:#ffb800;
+  margin:0 10px;
+  text-decoration:none;
+}
+
+/* FOOTER */
+footer{
+  padding:20px;
+  background:#020617;
+}
+</style>
 </head>
 
 <body>
