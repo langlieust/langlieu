@@ -6,10 +6,17 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<!-- SEO -->
+<meta name="description" content="Lang Lieu Official - Kênh video ẩm thực làng quê, thử thách đồ ăn cay và video hài hước viral hàng chục triệu view.">
+
+<!-- OG -->
+<meta property="og:title" content="Lang Lieu Official">
+<meta property="og:image" content="https://langlieuofficial.com/logo.png">
+<meta property="og:url" content="https://langlieuofficial.com">
+
+<!-- Favicon -->
 <link rel="icon" href="https://langlieuofficial.com/logo.png" type="image/png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon32x32.png">
-<link rel="icon" type="image/png" sizes="48x48" href="/favicon48x48.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
 <style>
@@ -60,7 +67,6 @@ nav ul li a:hover{
   gap:10px;
   text-decoration:none;
   color:white;
-  font-weight:600;
 }
 
 .logo img{
@@ -97,6 +103,7 @@ section{
   text-align:center;
 }
 
+/* VIDEOS */
 .videos{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
@@ -109,11 +116,43 @@ iframe{
   border-radius:12px;
 }
 
-.social a{
-  color:#ffb800;
-  margin:0 10px;
-  text-decoration:none;
+/* SOCIAL */
+.social-section{
+  background:linear-gradient(135deg,#6a11cb,#2575fc);
+  border-radius:20px;
+  margin:40px;
+  padding:60px 20px;
 }
+
+.social-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+  margin-top:40px;
+}
+
+.social-card{
+  background:rgba(255,255,255,0.1);
+  padding:30px;
+  border-radius:20px;
+  text-decoration:none;
+  color:white;
+  transition:0.3s;
+}
+
+.social-card:hover{
+  transform:translateY(-10px);
+  background:rgba(255,255,255,0.2);
+}
+
+.icon{
+  font-size:40px;
+  margin-bottom:15px;
+}
+
+.fb{color:#1877f2;}
+.yt{color:#ff0000;}
+.mail{color:#ffb800;}
 
 /* FOOTER */
 footer{
@@ -128,7 +167,7 @@ footer{
 <!-- NAVBAR -->
 <nav>
   <a href="#home" class="logo">
-    <img src="https://langlieuofficial.com/logo.png" alt="Lang Lieu Logo">
+    <img src="https://langlieuofficial.com/logo.png">
   </a>
 
   <ul>
@@ -150,9 +189,7 @@ footer{
 <!-- ABOUT -->
 <section id="about">
   <h2>About</h2>
-  <p>
-    Lang Lieu là kênh chuyên về ẩm thực làng quê, thử thách đồ ăn cay và video hài hước viral hàng chục triệu view.
-  </p>
+  <p>Lang Lieu là kênh ẩm thực làng quê, video hài hước viral hàng chục triệu view.</p>
 </section>
 
 <!-- VIDEOS -->
@@ -160,9 +197,9 @@ footer{
   <h2>🔥 Video triệu view</h2>
 
   <div class="videos">
-    <iframe src="https://www.youtube.com/embed/GdkIgGG-f-Q" allowfullscreen></iframe>
-    <iframe src="https://www.youtube.com/embed/5dhxuIQfjxA" allowfullscreen></iframe>
-    <iframe src="https://www.youtube.com/embed/ca4V2Fg4NYI" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/GdkIgGG-f-Q"></iframe>
+    <iframe src="https://www.youtube.com/embed/5dhxuIQfjxA"></iframe>
+    <iframe src="https://www.youtube.com/embed/ca4V2Fg4NYI"></iframe>
   </div>
 
   <p style="margin-top:20px;">42M • 32M • 30M views</p>
@@ -175,12 +212,29 @@ footer{
 </section>
 
 <!-- SOCIAL -->
-<section id="social">
+<section id="social" class="social-section">
   <h2>Social Network</h2>
 
-  <div class="social">
-    <a href="https://www.facebook.com/tiktok.langlieu/" target="_blank">Facebook</a>
-    <a href="https://www.youtube.com/@ThanhBin" target="_blank">YouTube</a>
+  <div class="social-grid">
+
+    <a href="https://www.facebook.com/tiktok.langlieu/" target="_blank" class="social-card">
+      <div class="icon fb">📘</div>
+      <h3>Facebook</h3>
+      <p>Follow fanpage chính thức</p>
+    </a>
+
+    <a href="https://www.youtube.com/@ThanhBin" target="_blank" class="social-card">
+      <div class="icon yt">▶️</div>
+      <h3>YouTube</h3>
+      <p>Xem video triệu view</p>
+    </a>
+
+    <a href="#contact" class="social-card">
+      <div class="icon mail">✉️</div>
+      <h3>Contact</h3>
+      <p>Liên hệ hợp tác</p>
+    </a>
+
   </div>
 </section>
 
