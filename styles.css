@@ -1,5 +1,9 @@
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
 
 body{
   background:#0f172a;
@@ -65,8 +69,14 @@ header{
   padding-top:80px;
 }
 
-header h1{font-size:60px;}
-header p{margin-top:10px;font-size:20px;}
+header h1{
+  font-size:60px;
+}
+
+header p{
+  margin-top:10px;
+  font-size:20px;
+}
 
 .btn{
   margin-top:20px;
@@ -106,4 +116,3 @@ footer{
   padding:20px;
   background:#020617;
 }
-</style>
