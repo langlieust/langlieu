@@ -13,7 +13,30 @@ with billions of views across social platforms.">
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
 body{background:#0f172a;color:white;}
+/* NAVBAR Mobile */
+  
+  @media (max-width:768px){
 
+  nav{
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center; /* căn giữa logo */
+  }
+
+  /* LOGO ra giữa */
+  .logo{
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+  }
+
+  /* ICON 3 GẠCH sang phải */
+  .menu-icon{
+    position:absolute;
+    right:20px;
+  }
+}
 /* NAVBAR */
 nav{
   position:fixed;width:100%;top:0;
