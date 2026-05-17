@@ -11,7 +11,59 @@ with billions of views across social platforms.">
 <link rel="icon" href="https://langlieuofficial.com/favicon.png" type="image/png">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 <style>
+/* SNOW */
+.snow{
+  position:absolute;
+  inset:0;
+  overflow:hidden;
+  pointer-events:none;
+  z-index:2;
+}
 
+.snow span{
+  position:absolute;
+  top:-10px;
+
+  width:8px;
+  height:8px;
+
+  border-radius:50%;
+
+  background:rgba(255,255,255,0.9);
+
+  box-shadow:
+    0 0 10px rgba(255,255,255,0.8),
+    0 0 20px rgba(255,255,255,0.4);
+
+  animation:snowFall linear infinite;
+}
+
+/* animation */
+@keyframes snowFall{
+
+  0%{
+    transform:
+      translateY(-10px)
+      translateX(0px)
+      rotate(0deg);
+
+    opacity:0;
+  }
+
+  10%{
+    opacity:1;
+  }
+
+  100%{
+    transform:
+      translateY(70vh)
+      translateX(80px)
+      rotate(360deg);
+
+    opacity:0;
+  }
+
+}
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
 body{background:#0f172a;color:white;}
 /* NAVBAR Mobile */
@@ -526,9 +578,24 @@ function toggleMenu(){
 
 <!-- HERO -->
 <header id="home">
+  <div class="snow">
+
+  <span style="left:3%; animation-duration:12s; animation-delay:0s;"></span>
+  <span style="left:8%; animation-duration:16s; animation-delay:2s;"></span>
+  <span style="left:15%; animation-duration:14s; animation-delay:1s;"></span>
+  <span style="left:22%; animation-duration:18s; animation-delay:3s;"></span>
+  <span style="left:30%; animation-duration:11s; animation-delay:0s;"></span>
+  <span style="left:38%; animation-duration:17s; animation-delay:2s;"></span>
+  <span style="left:46%; animation-duration:13s; animation-delay:4s;"></span>
+  <span style="left:55%; animation-duration:15s; animation-delay:1s;"></span>
+  <span style="left:63%; animation-duration:19s; animation-delay:3s;"></span>
+  <span style="left:71%; animation-duration:12s; animation-delay:0s;"></span>
+  <span style="left:80%; animation-duration:18s; animation-delay:5s;"></span>
+  <span style="left:90%; animation-duration:14s; animation-delay:2s;"></span>
+  </div>
   <div class="typing" id="typing"></div>
-  <p class="sub">#Shorts #Tiktok #Reels #Funny #Mukbang</p>
-  <a href="#videos" class="btn">watching video ..</a>
+<p class="sub">#Shorts #Tiktok #Reels #Funny #Mukbang</p>
+<a href="#videos" class="btn">watching video ..</a>
 </header>
 
 <!-- ABOUT -->
