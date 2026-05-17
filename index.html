@@ -61,33 +61,31 @@ nav ul li a:hover{color:#ffb800;}
 /* HERO */
 header{
   position: relative;
-  min-height: 60vh; /* 50vh hơi thấp, 60–80vh đẹp hơn */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 140px 20px 80px;
-  text-align: center;
 
-  background:url('https://langlieuofficial.com/channels4_banner.jpg') center/cover no-repeat;
-}
-
-
-header{
-  position: relative;
   min-height: 100vh;
-  overflow: hidden;
 
   display:flex;
+  flex-direction:column;
   justify-content:center;
   align-items:center;
-  flex-direction:column;
 
+  padding:140px 20px 100px;
+
+  overflow:hidden;
+  text-align:center;
+background-size: 115%;
   background:
-    linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.55)),
+    linear-gradient(
+      rgba(0,0,0,0.12),
+      rgba(0,0,0,0.28)
+    ),
     url('https://langlieuofficial.com/channels4_banner.jpg')
     center center / cover no-repeat;
+  
 }
+
+
+
 /* dark cinematic */
 header::before{
   content:"";
