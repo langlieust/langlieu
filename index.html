@@ -73,25 +73,20 @@ header{
 }
 
 
-  header{
+header{
   position: relative;
-  min-height: 60vh; /* 50vh hơi thấp, 60–80vh đẹp hơn */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 140px 20px 80px;
-  text-align: center;
+  min-height: 100vh;
+  overflow: hidden;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
 
   background:
-    linear-gradient(
-      rgba(0,0,0,0.25),
-      rgba(0,0,0,0.55)
-    ),
+    linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.55)),
     url('https://langlieuofficial.com/channels4_banner.jpg')
     center center / cover no-repeat;
-
-  animation: bgZoom 18s ease-in-out infinite alternate;
 }
 /* dark cinematic */
 header::before{
