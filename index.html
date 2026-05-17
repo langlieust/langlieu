@@ -73,15 +73,30 @@ header{
 
   overflow:hidden;
   text-align:center;
-background-size: 115%;
+
   background:
     linear-gradient(
-      rgba(0,0,0,0.12),
-      rgba(0,0,0,0.28)
+      rgba(0,0,0,0.08),
+      rgba(0,0,0,0.22)
     ),
     url('https://langlieuofficial.com/channels4_banner.jpg')
     center center / cover no-repeat;
-  
+
+  background-size:120%;
+
+  animation:bgZoom 20s ease-in-out infinite alternate;
+}
+
+@keyframes bgZoom{
+
+  from{
+    background-size:120%;
+  }
+
+  to{
+    background-size:128%;
+  }
+
 }
 
 
