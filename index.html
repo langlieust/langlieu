@@ -19,20 +19,16 @@ with billions of views across social platforms.">
   pointer-events:none;
   z-index:2;
 }
-.snow span{
-
-  position:absolute;
-  top:-60px;
-
-  font-size:22px;
-
-  opacity:0.9;
-
-  animation:snowFall linear infinite;
-
-  filter:drop-shadow(
-    0 0 6px rgba(255,140,0,0.2)
-  );
+.snow span {
+    position: absolute;
+    filter: opacity(0.5);
+    top: -10px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.4);
+    animation: snowFall linear infinite;
 }
 /* animation */
 @keyframes snowFall{
@@ -136,27 +132,12 @@ header{
 
 
 /* dark cinematic */
-header::before{
-  content:"";
-  position:absolute;
-  inset:0;
-
-  background:
-    radial-gradient(circle at top,
-    rgba(255,180,0,0.28),
-    transparent 40%),
-
-    radial-gradient(circle at bottom right,
-    rgba(255,0,0,0.2),
-    transparent 35%),
-
-    linear-gradient(
-      to bottom,
-      rgba(0,0,0,0.15),
-      rgba(0,0,0,0.65)
-    );
-
-  z-index:1;
+header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    /* background: radial-gradient(circle at top, rgba(255, 180, 0, 0.28), transparent 40%), radial-gradient(circle at bottom right, rgba(255, 0, 0, 0.2), transparent 35%), linear-gradient(to bottom, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.65)); */
+    z-index: 1;
 }
 
 /* blur glow */
